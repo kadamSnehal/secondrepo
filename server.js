@@ -14,5 +14,15 @@ app.get("/",(req,resp)=>{
     +"<li>Chameli</li></h4>"
     +"</ol>")
 });
+app.get("/aboutus",(req,resp)=>{
+    resp.send("<h1>about us------ </h1>"
+    +"<hr/>"
+    +"<h3>Flowers</h3>"
+    +"<br/>"
+    +"Flowers are the beauty of nature........</br>"
+    +"order which You want !!!!"
+    +"</br>Thank You !!!"
+    )
+});
 app.listen(3000);
 console.log("server started at 3000 port");
